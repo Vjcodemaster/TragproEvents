@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#F0F0F0</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Login -->
+    <color name="rosePink">#ff3366</color>
+    <color name="lightPink">#ffadc3</color>
+    <color name="lightGrey">#C7C7C7</color>
+    <color name="lightOrange">#fbc98e</color>
+    <color name="orange">#f7941d</color>
+    <color name="grey">#737373</color>
+
+    <color name="blueGray">#2f4159</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="indigo">#4b0082</color>
+
+    <!--Home Screen Module -->
+    <color name="darkGray">#1D2733</color>
+    <color name="darkBlue">#2F3F58</color>
+
+    <color name="whiteBlue">#C1C6CC</color>
+    <color name="greyNavigationLine">#454F5B</color>
+    <color name="tundoraGray">#464646</color>
+    <color name="redPinkTint">#FF3162</color>
+
+    <color name="gold">#FF9C32</color>
+    <color name="whiteSmoke">#F0F0F0</color>
+    <color name="skyBlue">#33ACF5</color>
+    <color name="veryLightGrey">#D6D6D6</color>
+    <color name="bubbleGrey">#7F7870</color>
+
+</resources>

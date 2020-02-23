@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:tools="http://schemas.android.com/tools"
+               xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeBounds
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="300"/>
+    <changeImageTransform>
+        <targets>
+            <target android:targetId="@id/viewpager_slideshow"
+                    tools:targetApi="kitkat"/>
+            <target android:targetId="@id/viewpager_image_detail"
+                    tools:targetApi="kitkat"/>
+        </targets>
+    </changeImageTransform>
+    <changeImageTransform>
+        <targets>
+            <target android:targetId="@id/ll_viewpager"
+                    tools:targetApi="kitkat"/>
+            <target android:targetId="@id/llDetailBubble"
+                    tools:targetApi="kitkat"/>
+        </targets>
+    </changeImageTransform>
+</transitionSet>
+<!--<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeImageTransform/>
+</transitionSet>-->
+<!--
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+    <changeImageTransform/>
+    <changeBounds
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="500"/>
+</transitionSet>-->

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical"
+              android:padding="@dimen/layout_activity_home_margin_medium">
+
+    <TextView
+        android:id="@+id/tv_write_review_heading"
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawablePadding="@dimen/layout_activity_home_margin_small"
+        android:drawableStart="@drawable/pencil"
+        android:gravity="center"
+        android:text="Write a short review"
+        android:textColor="@color/tundoraGray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_rv_width"
+        android:layout_marginBottom="@dimen/layout_activity_home_margin_small"
+        android:layout_marginTop="@dimen/layout_activity_home_margin_medium"
+        android:background="#c0c0c0"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <RatingBar
+            android:id="@+id/rb_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_nav_header_margin_xxlarge"
+            android:numStars="5"
+            android:rating="0"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:theme="@style/RatingBarReviewRating"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/layout_activity_home_margin_medium"
+        android:gravity="top"
+        android:minHeight="@dimen/layout_write_review_ll_min_height"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_write_review"
+            style="@style/EditText.Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_activity_home_margin_medium"
+            android:ems="10"
+            android:hint="Tell us what you think"
+            android:inputType="textMultiLine"
+            android:lineSpacingExtra="@dimen/layout_write_review_line_spacing"
+            android:maxLength="300"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:textColor="@color/tundoraGray"
+            android:textColorHint="@android:color/darker_gray"
+            android:theme="@style/EditText.Style"/>
+
+        <!--<View
+            android:id="@+id/UnderLine"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#03f94e" />-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/layout_activity_home_margin_large"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btn_write_review_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_write_review_button_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_red_light"/>
+
+        <Button
+            android:id="@+id/btn_post"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_write_review_button_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="@color/skyBlue"/>
+
+    </LinearLayout>
+
+</LinearLayout>

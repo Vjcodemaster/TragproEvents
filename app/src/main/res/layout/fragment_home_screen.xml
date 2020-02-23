@@ -1,0 +1,59 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.sspl.org.tp.HomeScreenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:paddingBottom="@dimen/appbar_padding_bottom"
+            android:paddingEnd="@dimen/drawable_dialog_bg_padding"
+            android:paddingStart="@dimen/drawable_dialog_bg_padding"
+            android:paddingTop="@dimen/appbar_padding_top"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_home_medium"
+                android:requiresFadingEdge="horizontal"
+                app:tabBackground="@drawable/home_tab_color_selector"
+                app:tabGravity="center"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabMaxWidth="0dp"
+                app:tabMinWidth="@dimen/layout_tab_home_padding"
+                app:tabMode="scrollable"
+                app:tabPaddingEnd="@dimen/layout_tab_home_padding"
+                app:tabPaddingStart="@dimen/layout_tab_home_padding"
+                app:tabSelectedTextColor="@color/tundoraGray"
+                app:tabTextColor="@color/veryLightGrey"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <View
+            android:id="@+id/view_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/drop_shadow"
+            android:visibility="gone"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    </LinearLayout>
+</FrameLayout>

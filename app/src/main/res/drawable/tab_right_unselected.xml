@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <solid android:color="@android:color/white"/>
+    <stroke
+        android:width="@dimen/drawable_tab_stroke_width"
+        android:color="@color/colorAccent"/>
+
+    <corners
+        android:bottomRightRadius="@dimen/drawable_tab_corner_radius"
+        android:topRightRadius="@dimen/drawable_tab_corner_radius"
+        />
+</shape>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:focusable="true"
+        android:paddingTop="@dimen/layout_recycler_review_rating_padding_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteSmoke"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_recycler_review_rating_padding_small"
+            android:paddingEnd="@dimen/layout_recycler_review_rating_padding_medium"
+            android:paddingStart="@dimen/layout_recycler_review_rating_padding_medium"
+            android:paddingTop="@dimen/layout_recycler_review_rating_padding_small">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_recycler_review_rating_margin_small"
+                        android:layout_marginStart="@dimen/layout_recycler_review_rating_margin_small"
+                        android:layout_marginTop="@dimen/layout_recycler_review_rating_margin_small"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight=".1"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:id="@+id/rb_rv_review_rating"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="0.1"
+                        android:theme="@style/RatingBarReviewRating"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <library.CircleImageView
+                    android:id="@+id/all_rc_avatar"
+                    android:layout_width="@dimen/layout_recycler_review_rating_circle_iv"
+                    android:layout_height="@dimen/layout_recycler_review_rating_circle_iv"
+                    android:src="@drawable/vj"/>
+
+                <TextView
+                    android:id="@+id/tv_rv_review"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/layout_recycler_review_rating_margin_medium"
+                    android:maxLines="3"
+                    android:text="@string/description"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_review_rating_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22-03-2017"
+                    android:textSize="@dimen/layout_recycler_review_rating_textsize"/>
+
+                <TextView
+                    android:id="@+id/tv_review_rating_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:00 pm"
+                    android:textSize="@dimen/layout_recycler_review_rating_textsize"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/layout_nav_header_ll_height"
+              android:baselineAligned="false"
+              android:fitsSystemWindows="true"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="@dimen/layout_nav_header_padding"
+              android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/darkGray"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="@dimen/layout_nav_header_margin_small"
+            android:layout_marginTop="@dimen/layout_nav_header_margin_xxlarge"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/image_button_back_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/arrow"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".03"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <library.CircleImageView
+                    android:id="@+id/nav_header_circle_image"
+                    android:layout_width="@dimen/layout_nav_header_circle_width"
+                    android:layout_height="@dimen/layout_nav_header_circle_width"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/layout_nav_header_margin_medium"
+                    android:layout_marginTop="@dimen/layout_nav_header_padding"
+                    android:src="@drawable/vj"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_nav_header_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/drawer_name_text_size"/>
+
+                <TextView
+                    android:id="@+id/tv_nav_header_designation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="@dimen/layout_nav_header_textsize_very_small"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginStart="@dimen/layout_nav_header_margin"
+            android:layout_marginTop="@dimen/layout_nav_header_padding"
+            android:layout_weight=".1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/layout_nav_header_margin_large"
+                android:background="@drawable/round_nav_header_notification"
+                android:gravity="center"
+                android:text="03"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/calender"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/greyNavigationLine"/>
+
+</LinearLayout>

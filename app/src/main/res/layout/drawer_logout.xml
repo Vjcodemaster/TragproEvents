@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_drawer_logout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="center"
+              android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/drawer_logout_bg"
+        android:gravity="center"
+        android:paddingBottom="@dimen/drawable_dialog_bg_padding"
+        android:paddingEnd="@dimen/layout_drawer_logout_padding"
+        android:paddingStart="@dimen/layout_drawer_logout_padding"
+        android:paddingTop="@dimen/drawable_dialog_bg_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"/>
+</LinearLayout>

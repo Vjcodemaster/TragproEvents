@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg"
+              android:orientation="vertical"
+              android:padding="@dimen/layout_dialog_readmore_padding">
+
+    <TextView
+        android:id="@+id/tv_readmore_heading"
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ARTNIC"
+        android:textColor="@color/tundoraGray"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_readmore_sub_heading"
+        style="?android:textAppearanceSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/layout_dialog_readmore_margin"
+        android:text="Category"
+        android:textColor="@color/tundoraGray"/>
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_readmore_description"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/layout_dialog_readmore_margin_medium"
+                android:layout_marginTop="@dimen/layout_dialog_readmore_margin_medium"
+                android:lineSpacingExtra="@dimen/layout_dialog_readmore_line_spacing"
+                android:text="@string/alert_description"
+                android:textColor="@color/tundoraGray"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

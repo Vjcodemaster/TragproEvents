@@ -1,0 +1,143 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/whiteSmoke</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowContentTransitions" android:targetApi="lollipop">true</item>
+        <item name="android:windowActivityTransitions" android:targetApi="lollipop">true</item>
+        <item name="android:windowSharedElementEnterTransition" android:targetApi="lollipop">@transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition" android:targetApi="lollipop">@transition/change_image_transform</item>
+        <item name="android:actionButtonStyle">@style/MenuActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/MenuActionButtonStyle</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/darker_gray</item>
+    </style>
+
+    <style name="Theme.DesignDemo" parent="Base.Theme.DesignDemo">
+    </style>
+
+    <style name="Base.Theme.DesignDemo" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/whiteSmoke</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Changes made to android:listDivider changes the color of navigation drawer's line -->
+    <style name="ThemeToolbar.NavigationView" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:listDivider">@color/greyNavigationLine</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <!-- This theme is related to readmore dialog of Home Screen to achieve the result -->
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- This attribute will be the properties of customDialogTheme & customDialogTheme90 -->
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+    <!-- This theme is related to review dialog of Review fragment to achieve the result -->
+    <style name="CustomDialogTheme90" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/darkGray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+    <style name="RatingBarReviewRating" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/darkGray</item>
+        <item name="colorControlActivated">@color/gold</item>
+    </style>
+
+
+    <!-- MenuActionButtonStyle handles spaces between actionbar icons(toolbar) works-->
+    <style name="MenuActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">40dp</item>
+        <item name="android:maxWidth">100dp</item>
+        <item name="android:width">40dp</item>
+    </style>
+
+    <!-- related to dialog review rating edit text -->
+    <style name="EditText.Style" parent="Widget.AppCompat.EditText">
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/skyBlue</item>
+        <item name="colorControlHighlight">@color/grey</item>
+    </style>
+
+    <!--<style name="MyTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>-->
+
+
+    <style name="AppTheme.PopupOverlay" parent="Base.ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+
+    <style name="MyTheme.ToolBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">@color/grey</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    </style>
+
+    <!-- Home Screen fragment tab layout tab's textview -->
+    <!--<style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.AppCompat.Button">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">16sp</item>
+    </style>-->
+
+</resources>

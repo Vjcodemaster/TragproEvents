@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sspl.org.tp.DetailActivity">
+
+    <include
+        android:id="@+id/detail_toolbar"
+        layout="@layout/home_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llTransitionGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:transitionName="@string/ll_event_heading_transition"
+            tools:targetApi="lollipop">
+
+            <TextView
+                android:id="@+id/tvEventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Artinic"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/greyNavigationLine"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvEventCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/layout_activity_detail_margin"
+                android:text="Art Events/Gallery"
+                android:textColor="@color/greyNavigationLine"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardview_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_activity_detail_margin_medium"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="@dimen/layout_activity_detail_card_radius"
+            card_view:cardElevation="@dimen/layout_activity_detail_card_elevation">
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+
+                <!--<ImageView
+                android:id="@+id/sessions_rv_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@android:color/black"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/imageslide"/>-->
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager_image_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_activity_detail_viewpager_height"
+                    android:transitionName="@string/viewpager_transition"
+                    tools:targetApi="lollipop"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageview_detail_leftarrow"
+                        android:layout_width="@dimen/layout_activity_detail_imageview_arrow"
+                        android:layout_height="@dimen/layout_activity_detail_imageview_arrow"
+                        android:background="@drawable/arrow_circle_bg"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/arrow_left"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageview_detail_rightarrow"
+                        android:layout_width="@dimen/layout_activity_detail_imageview_arrow"
+                        android:layout_height="@dimen/layout_activity_detail_imageview_arrow"
+                        android:background="@drawable/arrow_circle_bg"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/arrow_right"/>
+
+                </LinearLayout>
+            </FrameLayout>
+        </android.support.v7.widget.CardView>
+        <LinearLayout
+            android:id="@+id/llDetailBubble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="@dimen/layout_activity_detail_margin_medium"
+            android:orientation="horizontal"
+            android:transitionName="@string/ll_bubble_transition"
+            tools:targetApi="lollipop"/>
+
+        <TextView
+            android:id="@+id/tvAboutEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/layout_activity_detail_margin_large"
+            android:layout_marginStart="@dimen/layout_activity_detail_margin_large"
+            android:layout_marginTop="@dimen/layout_activity_detail_margin_medium"
+            android:text="@string/description"
+            android:textSize="@dimen/layout_activity_detail_textsize_verysmall"
+            android:transitionName="@string/tv_description_transition"
+            tools:targetApi="lollipop"/>
+    </LinearLayout>
+
+</LinearLayout>

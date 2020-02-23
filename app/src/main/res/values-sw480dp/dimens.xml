@@ -1,0 +1,262 @@
+<resources>
+
+    <dimen name="activity_vertical_margin">20dp</dimen>
+
+    <dimen name="activity_image_width">180dp</dimen>
+    <dimen name="activity_image_height">180dp</dimen>
+
+    <dimen name="login_button_width">300dp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+
+    <dimen name="layout_margin_medium">20dp</dimen>
+    <dimen name="layout_margin_small">16dp</dimen>
+
+    <dimen name="layout_margin_default_small">14dp</dimen>
+    <dimen name="layout_margin_default_medium">26dp</dimen>
+
+    <dimen name="layout_height_small">50dp</dimen>
+
+    <dimen name="toggle_icon_width_small">2.8dp</dimen>
+    <dimen name="toggle_icon_width_medium">28dp</dimen>
+    <dimen name="toggle_icon_height_medium">28dp</dimen>
+    <dimen name="toggle_background_height">6dp</dimen>
+    <dimen name="toggle_background_width_small">1.2dp</dimen>
+    <dimen name="toggle_background_width_medium">11.6dp</dimen>
+    <dimen name="toggle_background_radius">15.5dp</dimen>
+    <dimen name="toggle_button_bottom">2.1dp</dimen>
+    <dimen name="toggle_button_left">2.8dp</dimen>
+    <dimen name="toggle_button_right">29.4dp</dimen>
+    <dimen name="toggle_button_top">2.1dp</dimen>
+
+    <dimen name="layout_margin_top_small">26dp</dimen>
+    <dimen name="layout_margin_top_medium">28dp</dimen>
+    <dimen name="layout_margin_top_large">43dp</dimen>
+    <dimen name="layout_margin_top_xlarge">77dp</dimen>
+
+    <dimen name="layout_marginStart">56dp</dimen>
+
+    <dimen name="layout_marginEnd">42dp</dimen>
+    <dimen name="layout_marginEnd_small">56dp</dimen>
+
+    <dimen name="layout_marginBottom">14dp</dimen>
+
+    <dimen name="padding_start">63dp</dimen>
+
+    <dimen name="layout_height_view">1.4dp</dimen>
+    <dimen name="layout_height_medium">140dp</dimen>
+
+    <dimen name="layout_width_small">140dp</dimen>
+    <dimen name="layout_width_medium">300dp</dimen>
+
+    <!--update from here -->
+    <dimen name="layout_margin_progressbar">6dp</dimen>
+    <dimen name="round_button_inner_radius_small">53dp</dimen>
+    <dimen name="round_button_inner_radius_medium">67dp</dimen>
+    <dimen name="round_button_thickness_small">1.4dp</dimen>
+    <dimen name="round_button_thickness_medium">5.6dp</dimen>
+    <dimen name="round_button_cornered_radius">28dip</dimen>
+    <dimen name="default_round_button_inner_radius">56dp</dimen>
+    <dimen name="default_round_button_thickness_small">2.8dp</dimen>
+
+    <!-- dimen related scanning module -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_scan_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">14dp</dimen>
+    <dimen name="appbar_padding_bottom">14dp</dimen>
+
+
+    <!-- dimens related to recyclerview -->
+    <dimen name="layout_marginTop_rv_small">4dp</dimen>
+    <dimen name="layout_marginTop_rv_medium">6.5dp</dimen>
+
+    <dimen name="padding_rv">13dp</dimen>
+
+    <dimen name="view_rv_width">1.4dp</dimen>
+    <dimen name="circle_width">77dp</dimen>
+    <dimen name="circle_height">77dp</dimen>
+
+    <dimen name="layout_margin_rv_small">13dp</dimen>
+    <dimen name="layout_margin_rv_medium">16dp</dimen>
+    <dimen name="layout_margin_rv_large">20dp</dimen>
+
+    <dimen name="text_size_rv_small">13sp</dimen>
+    <dimen name="text_size_rv_default">16sp</dimen>
+
+    <dimen name="rv_drawablePadding_small">1.4dp</dimen>
+    <dimen name="rv_drawablePadding_medium">4dp</dimen>
+
+    <!--dimens related to layout -->
+    <dimen name="layout_height_scanning_medium">40dp</dimen>
+    <dimen name="layout_tab_scanning_padding">58dp</dimen>
+
+    <!-- dimens related to drawable xmls -->
+    <dimen name="drawable_tab_stroke_width">3.5dp</dimen>
+    <dimen name="drawable_tab_corner_radius">13dp</dimen>
+
+    <!-- Home Screen -->
+
+    <!--dimens related to layout -->
+    <dimen name="layout_height_home_medium">37dp</dimen>
+
+    <dimen name="layout_tab_home_padding">90dp</dimen>
+
+    <!-- dimens related to drawable xmls -->
+    <dimen name="drawable_tab_corner_home_radius">22dp</dimen>
+
+
+    <!-- dimens related to arrow of detail activity -->
+    <dimen name="drawable_arrow_width">3dp</dimen>
+    <dimen name="drawable_arrow_height">75dp</dimen>
+    <dimen name="drawable_arrow_bottom">30dp</dimen>
+    <dimen name="drawable_arrow_radius">2dp</dimen>
+    <dimen name="drawable_arrow_bg">70dp</dimen>
+
+    <!-- dimens related to bubble -->
+    <dimen name="drawable_bubble">280dp</dimen>
+
+    <!-- related to dialog bg -->
+    <dimen name="drawable_dialog_bg_radius">20dp</dimen>
+    <dimen name="drawable_dialog_bg_padding">13dp</dimen>
+
+    <!-- related to nav drawer -->
+    <dimen name="drawable_drawer_bg_width">12dp</dimen>
+    <dimen name="drawable_drawer_bg_height">7dp</dimen>
+    <dimen name="drawable_drawer_bg_solid_width">1.6dp</dimen>
+    <dimen name="drawable_drawer_bg_stroke_width">1.4px</dimen>
+    <dimen name="drawable_drawer_bg_radius">40dp</dimen>
+    <dimen name="drawer_name_text_size">15sp</dimen>
+
+    <!-- related to message inbox -->
+    <dimen name="drawable_message_inbox_radius">13dp</dimen>
+
+    <!-- related to nav header-->
+    <dimen name="drawable_nav_round_stroke_width">2.6dp</dimen>
+    <dimen name="drawable_nav_round_width_height">26dp</dimen>
+
+    <!-- related to activity_detail -->
+    <dimen name="layout_activity_detail_margin">6.5dp</dimen>
+    <dimen name="layout_activity_detail_margin_medium">13dp</dimen>
+    <dimen name="layout_activity_detail_margin_large">19.5dp</dimen>
+    <dimen name="layout_activity_detail_card_radius">5.2dp</dimen>
+    <dimen name="layout_activity_detail_card_elevation">3.9dp</dimen>
+    <dimen name="layout_activity_detail_viewpager_height">299dp</dimen>
+    <dimen name="layout_activity_detail_imageview_arrow">39dp</dimen>
+    <dimen name="layout_activity_detail_textsize_verysmall">14.3sp</dimen>
+
+    <!-- related to activity_home_screen-->
+    <dimen name="layout_activity_home_margin_verysmall">6.5dp</dimen>
+    <dimen name="layout_activity_home_margin_small">13dp</dimen>
+    <dimen name="layout_activity_home_margin_medium">19.5dp</dimen>
+    <dimen name="layout_activity_home_margin_large">26dp</dimen>
+    <dimen name="layout_activity_home_margin_extralarge">52dp</dimen>
+    <dimen name="layout_activity_home_textsize">20sp</dimen>
+    <dimen name="layout_activity_home_padding">13dp</dimen>
+    <dimen name="layout_activity_home_ll_height">58dp</dimen>
+    <dimen name="layout_activity_home_button_height">32dp</dimen>
+
+    <!-- related to dialog_filter -->
+    <dimen name="layout_dialog_filter_margin_small">6.5dp</dimen>
+    <dimen name="layout_dialog_filter_margin_medium">13dp</dimen>
+    <dimen name="layout_dialog_filter_cardview">10.4dp</dimen>
+    <dimen name="layout_dialog_filter_ll_width">230dp</dimen>
+
+    <!-- related to dialog_readmore -->
+    <dimen name="layout_dialog_readmore_padding">19.5dp</dimen>
+    <dimen name="layout_dialog_readmore_margin">10.4dp</dimen>
+    <dimen name="layout_dialog_readmore_margin_medium">15.6dp</dimen>
+    <dimen name="layout_dialog_readmore_line_spacing">10dp</dimen>
+
+    <!-- related to dialog_sort some of them in dialog_filter which has common dps -->
+    <dimen name="layout_dialog_sort_ll_width">195dp</dimen>
+
+    <!-- related to dialog_write_review-->
+    <dimen name="layout_write_review_ll_min_height">225dp</dimen>
+    <dimen name="layout_write_review_line_spacing">6.5dp</dimen>
+    <dimen name="layout_write_review_button_height">32dp</dimen>
+
+    <!-- related to drawer_logout -->
+    <dimen name="layout_drawer_logout_padding">78dp</dimen>
+
+    <!-- related to review rating -->
+    <dimen name="layout_review_rating_padding">10.4dp</dimen>
+    <dimen name="layout_review_rating_padding_small">13dp</dimen>
+    <dimen name="layout_review_rating_padding_medium">26dp</dimen>
+    <dimen name="layout_review_rating_margin">6.5dp</dimen>
+    <dimen name="layout_review_rating_margin_small">13dp</dimen>
+    <dimen name="layout_review_rating_margin_medium">19.5dp</dimen>
+    <dimen name="layout_review_rating_image_height">221dp</dimen>
+    <dimen name="layout_review_rating_textsize">21sp</dimen>
+    <dimen name="layout_review_rating_circle_iv">78dp</dimen>
+    <dimen name="layout_review_rating_button_min_width">39dp</dimen>
+    <dimen name="layout_review_rating_button_height">32.5dp</dimen>
+
+    <!-- related to fragment_session & speakers -->
+    <dimen name="layout_session_margin">6.5dp</dimen>
+
+    <!-- related to menu_counter -->
+    <dimen name="layout_menu_counter_tv_width">39dp</dimen>
+
+    <!-- related to nav_header -->
+    <dimen name="layout_nav_header_ll_height">260dp</dimen>
+    <dimen name="layout_nav_header_padding">26dp</dimen>
+    <dimen name="layout_nav_header_margin">10.4dp</dimen>
+    <dimen name="layout_nav_header_margin_small">13dp</dimen>
+    <dimen name="layout_nav_header_margin_medium">15.6dp</dimen>
+    <dimen name="layout_nav_header_margin_large">19.5dp</dimen>
+    <dimen name="layout_nav_header_margin_xlarge">45.5dp</dimen>
+    <dimen name="layout_nav_header_margin_xxlarge">52dp</dimen>
+    <dimen name="layout_nav_header_circle_width">140dp</dimen>
+    <dimen name="layout_nav_header_textsize_very_small">12sp</dimen>
+
+    <!-- related to recycler_view_booths & products -->
+    <dimen name="layout_recycler_view_booths_padding">10.4dp</dimen>
+    <dimen name="layout_recycler_view_booths_padding_small">13dp</dimen>
+    <dimen name="layout_recycler_view_booths_padding_medium">26dp</dimen>
+    <dimen name="layout_recycler_view_booths_iv_height">156dp</dimen>
+    <dimen name="layout_recycler_view_booths_textsize">21sp</dimen>
+    <dimen name="layout_recycler_view_booths_margin_verysmall">6.5dp</dimen>
+    <dimen name="layout_recycler_view_booths_margin_small">10.4dp</dimen>
+    <dimen name="layout_recycler_view_booths_margin_medium">13dp</dimen>
+    <dimen name="layout_recycler_view_booths_margin_large">26dp</dimen>
+
+    <!-- related to recycler_review_rating -->
+    <dimen name="layout_recycler_review_rating_padding_small">13dp</dimen>
+    <dimen name="layout_recycler_review_rating_padding_medium">26dp</dimen>
+    <dimen name="layout_recycler_review_rating_margin_small">6.5dp</dimen>
+    <dimen name="layout_recycler_review_rating_margin_medium">20dp</dimen>
+    <dimen name="layout_recycler_review_rating_circle_iv">65dp</dimen>
+    <dimen name="layout_recycler_review_rating_textsize">13sp</dimen>
+
+    <!-- related to recycler_view_sessions -->
+    <dimen name="layout_recycler_view_sessions_padding_verysmall">8dp</dimen>
+    <dimen name="layout_recycler_view_sessions_padding_small">10.4dp</dimen>
+    <dimen name="layout_recycler_view_sessions_padding_medium">26dp</dimen>
+    <dimen name="layout_recycler_view_sessions_iv_height">156dp</dimen>
+    <dimen name="layout_recycler_view_sessions_textsize_small">14sp</dimen>
+    <dimen name="layout_recycler_view_sessions_textsize">21sp</dimen>
+    <dimen name="layout_recycler_view_sessions_margin_small">6.5dp</dimen>
+    <dimen name="layout_recycler_view_sessions_margin_medium">10.4dp</dimen>
+    <dimen name="layout_recycler_view_sessions_margin_large">13dp</dimen>
+    <dimen name="layout_recycler_view_sessions_margin_xlarge">26dp</dimen>
+
+    <!-- related to recycler_view_speakers -->
+    <dimen name="layout_recycler_view_speakers_padding">10.4dp</dimen>
+    <dimen name="layout_recycler_view_speakers_padding_small">13dp</dimen>
+    <dimen name="layout_recycler_view_speakers_padding_medium">26dp</dimen>
+    <dimen name="layout_recycler_view_speakers_iv_height">156dp</dimen>
+    <dimen name="layout_recycler_view_speakers_textsize">21sp</dimen>
+    <dimen name="layout_recycler_view_speakers_margin_small">6.5dp</dimen>
+    <dimen name="layout_recycler_view_speakers_margin_medium">10.4dp</dimen>
+    <dimen name="layout_recycler_view_speakers_margin_large">13dp</dimen>
+    <dimen name="layout_recycler_view_speakers_margin_xlarge">26dp</dimen>
+
+    <!-- related to search_bar -->
+    <dimen name="layout_search_bar_margin_small">6.5dp</dimen>
+    <dimen name="layout_search_bar_margin_medium">13dp</dimen>
+
+    <!-- related to toolbar -->
+    <dimen name="layout_toolbar_textview_textsize">23sp</dimen>
+
+</resources>

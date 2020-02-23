@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_dialog_filter_margin_small"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="#E6FFFFFF"
+        app:cardCornerRadius="@dimen/layout_dialog_filter_cardview"
+        app:cardElevation="@dimen/layout_dialog_filter_cardview"
+        app:contentPadding="@dimen/layout_dialog_filter_margin_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/layout_dialog_filter_margin_medium"
+                android:drawablePadding="@dimen/layout_dialog_filter_margin_medium"
+                android:drawableStart="@drawable/sort"
+                android:gravity="center"
+                android:text="@string/sort_by_time"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                android:textColor="@color/tundoraGray"/>
+
+            <LinearLayout
+                android:id="@+id/ll_sort_time_dynamic_parent"
+                android:layout_width="@dimen/layout_dialog_sort_ll_width"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/layout_dialog_filter_margin_medium"
+                android:paddingStart="@dimen/layout_dialog_filter_margin_medium">
+
+
+                <RadioGroup
+                    android:id="@+id/rg_dialog_sort_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent">
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

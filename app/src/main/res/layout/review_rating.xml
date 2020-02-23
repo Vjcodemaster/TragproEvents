@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/layout_review_rating_image_height"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/products_rv_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/black"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/imageslide"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha=".5"
+                        android:background="@android:color/black"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Product Name"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/layout_review_rating_textsize"
+                        android:textStyle="bold"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_marginBottom="@dimen/layout_review_rating_padding"
+                        android:layout_marginEnd="@dimen/layout_review_rating_padding_small"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:rating="3"
+                        android:stepSize="0.1"
+                        android:theme="@style/RatingBar"/>
+                </FrameLayout>
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_review_rating_margin"
+                    app:layout_collapseMode="pin"/>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:focusable="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/layout_review_rating_padding"
+            android:paddingTop="@dimen/layout_review_rating_padding"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/layout_review_rating_padding_medium"
+                android:paddingStart="@dimen/layout_review_rating_padding_medium">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_review_rating_padding"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/layout_review_rating_margin"
+                        android:layout_marginTop="@dimen/layout_review_rating_margin"
+                        android:gravity="center"
+                        android:text="Your Reviews and Ratings"
+                        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+                    <Button
+                        android:id="@+id/btn_rr_review_settings"
+                        android:layout_width="@dimen/layout_review_rating_padding_medium"
+                        android:layout_height="@dimen/layout_review_rating_padding_medium"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_horizontal"
+                        android:text="@string/vertical_ellipsis"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_review_rating_margin_medium">
+
+                    <LinearLayout
+                        android:id="@+id/ll_rr_user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/layout_review_rating_margin_small"
+                        android:gravity="center">
+
+                        <library.CircleImageView
+                            android:id="@+id/all_rc_avatar"
+                            android:layout_width="@dimen/layout_review_rating_circle_iv"
+                            android:layout_height="@dimen/layout_review_rating_circle_iv"
+                            android:src="@drawable/vj"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_rr_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vijay E H"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+                                android:textStyle="bold"/>
+
+                            <RatingBar
+                                android:id="@+id/rating_bar_user"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/layout_nav_header_margin_xxlarge"
+                                android:numStars="5"
+                                android:rating="0"
+                                android:scaleX=".5"
+                                android:scaleY=".5"
+                                android:theme="@style/RatingBarReviewRating"/>
+
+                            <TextView
+                                android:id="@+id/tv_rr_user_review"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:textAlignment="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_post"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btn_post_rr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/layout_review_rating_padding_medium"
+                                android:layout_gravity="end"
+                                android:background="?attr/selectableItemBackground"
+                                android:gravity="center"
+                                android:text="Post"
+                                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                                android:textColor="@android:color/holo_red_light"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/layout_review_rating_padding_medium">
+
+                <Button
+                    android:id="@+id/btn_write_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_review_rating_button_height"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:drawablePadding="@dimen/layout_review_rating_padding_small"
+                    android:drawableStart="@drawable/pencil"
+                    android:gravity="center"
+                    android:text="Write Your Review"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
+                    android:textColor="@android:color/holo_red_light"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_rv_width"
+                android:layout_marginBottom="@dimen/layout_review_rating_margin_small"
+                android:layout_marginTop="@dimen/layout_review_rating_margin_small"
+                android:background="#c0c0c0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_review_rating_margin"
+                android:layout_marginTop="@dimen/layout_review_rating_margin"
+                android:gravity="center"
+                android:paddingEnd="@dimen/layout_review_rating_padding_medium"
+                android:paddingStart="@dimen/layout_review_rating_padding_medium"
+                android:text="All Reviews"
+                android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_review_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_review_rating_margin"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:scrollbars="vertical"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clSnackBar"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llSnackBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_xlarge"
+                android:orientation="vertical"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/padding_start">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_marginEnd"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text="@string/device_scan"/>
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbDeviceScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/layout_height_small"
+                        android:button="@null"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/checkbox_selector"
+                        android:focusable="false"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_view"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_marginEnd"
+                    android:layout_marginTop="@dimen/layout_margin_top_medium"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".1"
+                        android:text="@string/receive_info"/>
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/cbReceiveInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/layout_height_small"
+                        android:button="@null"
+                        android:checked="false"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/checkbox_selector"
+                        android:focusable="false"
+                        android:textColor="@color/orange"/>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/layout_height_view"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/layout_marginEnd"
+                    android:layout_marginTop="@dimen/layout_margin_top_large"
+                    android:orientation="horizontal">
+
+                    <!--<TextView
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/area_of_interest"/>-->
+
+                    <Button
+                        android:id="@+id/btn_expand"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".9"
+                        android:background="?attr/selectableItemBackground"
+                        android:text="@string/area_of_interest"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"/>
+
+                    <ImageView
+                        android:id="@+id/iv_expand"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".1"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="center"
+                        android:src="@drawable/drop_down_arrow"/>
+
+                    <!--<Button
+                        android:id="@+id/btnDownArrow"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/drop_down_arrow"
+                        android:text="@string/area_of_interest"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/btnUpArrow"
+                        style="?android:textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:drawableEnd="@drawable/drop_down_arrow_180"
+                        android:text="@string/area_of_interest"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:visibility="gone"/>-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <net.cachapa.expandablelayout.ExpandableLayout
+                android:id="@+id/expandable_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/padding_start"
+                app:el_duration="600"
+                app:el_expanded="true">
+
+                <LinearLayout
+                    android:id="@+id/llDynamicParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <!--<LinearLayout
+                android:id="@+id/llDynamicVisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="@dimen/padding_start"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/llDynamicParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/layout_height_view"
+                android:layout_marginTop="@dimen/layout_margin_top_large"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_medium">
+
+                <TextView
+                    style="?android:buttonBarButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:text="@string/contact_detail_visibility"
+                    android:textColor="@color/grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/layout_marginEnd_small"
+                android:layout_marginStart="@dimen/layout_marginStart"
+                android:layout_marginTop="@dimen/layout_margin_top_small"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cbPrivate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/layout_height_medium"
+                    android:layout_weight=".1"
+                    android:background="@drawable/round_button"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:text="@string/button_private"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"/>
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/cbPublic"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/layout_height_medium"
+                    android:layout_weight=".1"
+                    android:background="@drawable/round_button"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:text="@string/button_public"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey"/>
+                <!-- <Button
+                     android:id="@+id/btnPrivate"
+                     style="?android:buttonBarButtonStyle"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:layout_marginEnd="25dp"
+                     android:background="@drawable/round_button"
+                     android:text="@string/button_private"
+                     android:textColor="@color/grey"/>
+
+                 <Button
+                     android:id="@+id/btnPublic"
+                     style="?android:buttonBarButtonStyle"
+                     android:layout_width="100dp"
+                     android:layout_height="100dp"
+                     android:background="@drawable/round_button"
+                     android:text="@string/button_public"
+                     android:textColor="@color/grey"/>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_marginBottom"
+                android:layout_marginTop="@dimen/layout_margin_top_large"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnConfigure"
+                    style="?android:textAppearanceMedium"
+                    android:layout_width="@dimen/layout_width_medium"
+                    android:layout_height="@dimen/layout_height_small"
+                    android:background="@drawable/cornered_button"
+                    android:text="@string/button_configure"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+
+    <size
+        android:width="@dimen/drawable_drawer_bg_width"
+        android:height="@dimen/drawable_drawer_bg_height"/>
+    <solid
+        android:width="@dimen/drawable_drawer_bg_solid_width"
+        android:color="@color/darkGray"/>
+    <stroke
+        android:width="@dimen/drawable_drawer_bg_stroke_width"
+        android:color="@android:color/white"/>
+    <corners android:radius="@dimen/drawable_message_inbox_radius"/>
+</shape>

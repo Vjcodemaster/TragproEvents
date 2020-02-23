@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/toggle_background_off"/>
+    <item
+        android:bottom="@dimen/toggle_button_bottom"
+        android:drawable="@drawable/gray_toggle_icon"
+        android:left="@dimen/toggle_button_left"
+        android:right="@dimen/toggle_button_right"
+        android:top="@dimen/toggle_button_top"/>
+</layer-list>

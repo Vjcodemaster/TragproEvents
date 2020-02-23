@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">TagproEvents</string>
+    <!-- Strings related to login -->
+    <string name="prompt_id">User ID</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_login">LOGIN</string>
+    <string name="login_activity">LOGIN_ACTIVITY</string>
+    <string name="configuration">CONFIGURATION</string>
+    <string name="user_does_not_exist">User ID doesn\'t Exist</string>
+    <string name="unable_contact_server">We are unable to contact server. Please try again later</string>
+    <string name="user_id_password_mismatch">User ID/Password mismatched</string>
+    <string name="action_forgot_password">Forgot Password?</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="stay_signed_in">Stay signed in</string>
+    <string name="sign_in">SIGN_IN</string>
+    <string name="forgot_password">FORGOT_PASSWORD</string>
+    <string name="btn_request_password">Request Password</string>
+    <string name="invalid_username_password">Invalid credentials</string>
+    <string name="enter_id">Enter your ID</string>
+
+    <!-- related to configuration-->
+    <string name="button_private">Private</string>
+    <string name="button_public">Public</string>
+    <string name="button_configure">Configure</string>
+    <string name="device_scan">Device Scan</string>
+    <string name="receive_info">Receive Info.</string>
+    <string name="area_of_interest">Area of Interest</string>
+    <string name="contact_detail_visibility">Contact Detail Visibility</string>
+    <string name="no_internet_connection">Internet connection required</string>
+
+    <!--alert Dialog -->
+    <string name="please_wait">Please wait&#8230;</string>
+
+    <!-- Toast-->
+
+    <!-- shared preferences -->
+    <string name="is_login">IS_LOGIN</string>
+    <string name="is_configuration_completed">IS_CONFIGURATION_COMPLETED</string>
+    <string name="id_arraylist">ID_ARRAYLIST</string>
+    <string name="category_arraylist">CATEGORY_ARRAYLIST</string>
+    <string name="user_type">USER_TYPE</string>
+    <string name="user_id">USER_ID</string>
+    <string name="is_user_first_time">IS_USER_FIRST_TIME</string>
+
+    <!-- scanning -->
+    <string name="name">Name</string>
+
+    <!-- Home Screen -->
+    <string name="home">Home</string>
+    <string name="event_name">Event Name</string>
+    <string name="inbox">Inbox</string>
+    <string name="event_review">Event Review</string>
+    <string name="artinic">Artinic</string>
+    <string name="art_event">Art Events/Gallery</string>
+    <string name="nav_scanning">Scanning</string>
+    <string name="maps">Maps</string>
+    <string name="sharing_info">Sharing Info</string>
+    <string name="search">Search</string>
+    <string name="reports">Reports</string>
+    <string name="review_rating">Reviews &amp; Ratings</string>
+    <string name="booking_cancellation">Booking &amp; cancellation</string>
+    <string name="settings">Settings</string>
+    <string name="message_inbox">Message Inbox</string>
+    <string name="sessions">Sessions</string>
+    <string name="booths">Booths</string>
+    <string name="products">Products</string>
+    <string name="speakers">Speakers</string>
+    <string name="rankings">Rankings</string>
+    <string name="reviews">Reviews</string>
+    <string name="read_more">Read More >></string>
+    <string name="logout">Logout</string>
+
+    <string name="all">All</string>
+    <string name="reserved">Reserved</string>
+    <string name="category_1">Category 1</string>
+    <string name="category_2">Category 2</string>
+    <string name="category_3">Category 3</string>
+
+    <string name="by_rating">By Rating</string>
+    <string name="by_time">By Time</string>
+
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+
+    <string name="sort_by_time">Sort by time</string>
+    <string name="event_tag_line">Event Tag Line</string>
+    <string name="event_rating">4/5</string>
+    <string name="from">From</string>
+
+    <string name="description">Renaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance</string>
+
+    <string name="alert_description">Renaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance. \nRenaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance. ablished and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent.
+        \nRenaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance.
+    \nRenaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance.
+    \nRenaissance Gallerie, a Indian Art Gallery, where one can easily promoting young artists,
+        promoting up coming artists, promoting both established and young artists, promotes budding artists, promoting
+        talented artists and as well as give Golden chance to young artists, Golden Opportunity to showcase young talent,
+        displaying works of young and budding artists, Helping young artists to show their talent, Great chance to display
+        at Renaissance.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="filter_names">
+        <item>@string/all</item>
+        <item>@string/reserved</item>
+        <item>@string/category_1</item>
+        <item>@string/category_2</item>
+        <item>@string/category_3</item>
+    </string-array>
+
+    <string-array name="sort_names">
+        <item>@string/by_rating</item>
+        <item>@string/by_time</item>
+    </string-array>
+
+    <string-array name="sort_scan_time_names">
+        <item>@string/ascending</item>
+        <item>@string/descending</item>
+    </string-array>
+    <!-- related to transition -->
+    <string name="viewpager_transition">viewpager_transition</string>
+    <string name="tv_description_transition">tv_description_transition</string>
+    <string name="ll_event_heading_transition">ll_event_heading_transition</string>
+    <string name="ll_bubble_transition">ll_bubble_transition</string>
+
+    <string name="vertical_ellipsis">&#8942;</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <!-- related to alert dialogs -->
+    <string name="bluetooth_message">In order to scan devices and display, bluetooth is required. Would you like to turn on the Bluetooth?</string>
+    <string name="location_explanation">To assist you better with scanning and other map features, we need the location access. Would you like to turn on the Location?</string>
+    <string name="device_location_message">To assist you better with scanning and other map features, we need the location access. Would you like to turn on the Location?</string>
+</resources>
